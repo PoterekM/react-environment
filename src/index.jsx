@@ -5,14 +5,17 @@ import { createStore } from 'redux';
 import reducer from './reducers/some-reducer';
 import { Provider } from 'react-redux'
 import App from "./components/App";
+import { HashRouter } from 'react-router-dom';
 
 const store = createStore(reducer);
 
 const render = (Component) => {
   ReactDOM.render(
     <Provider store={store}>
-      <Component/>
-  </Provider>,
+      <HashRouter>
+        <Component/>
+      </HashRouter>
+    </Provider>,
     document.getElementById("react-app-root")
   );
 };
