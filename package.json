@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack && webpack-dev-server",
-    "lint": "eslint src/** src/**/**; exit 0"
+    "lint": "eslint src/** src/**/**; exit 0",
+    "test": "jest",
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "author": "",
   "license": "ISC",
@@ -23,6 +24,7 @@
     "eslint": "^4.6.1",
     "eslint-plugin-react": "^7.3.0",
     "html-webpack-plugin": "^2.29.0",
+    "jest": "^20.0.4",
     "react-hot-loader": "^3.0.0-beta.7",
     "webpack": "^2.6.0",
     "webpack-dev-server": "^2.5.0"
